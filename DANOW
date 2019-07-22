@@ -1,0 +1,33 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n,q,l,r;
+    long long int fayda=0;
+    cin>>n>>q;
+    long long int a[n],b[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+    for(int i=0;i<n;i++)
+    {
+        cin>>b[i];
+    }
+    for(int i=0;i<q;i++)
+    {
+        cin>>l;
+        cin>>r;
+        //for(int j=0;j<q;j++)
+       // if()
+        {
+            for(int k=l-1;k<r;k++)
+            {
+                fayda+=a[k]*b[k];
+                //cout<<a[k]<<" "<<b[k]<<" "<<fayda<<endl;
+            }
+        }
+        cout<<fayda<<endl;
+        fayda=0;
+    }
+}
